@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 export JENKINS_UC_DOWNLOAD=https://mirror.xmission.com/jenkins/
 java -jar /bin/jenkins-plugin-manager.jar \
-    --jenkins-update-center "http://mirror.xmission.com/jenkins/updates/current/update-center.json" \
+    --jenkins-update-center "http://mirror.xmission.com/jenkins/updates/stable/update-center.actual.json" \
     --jenkins-plugin-info "http://mirror.xmission.com/jenkins/updates/current/plugin-versions.json" \
-    --jenkins-incrementals-repo-mirror "http://mirror.xmission.com/jenkins/updates/experimental/update-center.json" \
     "$@"
